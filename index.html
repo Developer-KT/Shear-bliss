@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shear Bliss Salon</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <!--------------------------- Navbar Section ------------------------>
+    <header class="navbar-container">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo5.png" alt="logo image">
+            </div>
+                <ul class="menu-tabs">
+                    <li class="tab">HOME</li>
+                    <li class="tab">ONLINE BOOKING</li>
+                    <li class="tab">TESTIMONIALS</li>
+                    <li class="tab">INSTAGRAM GALLERY</li>
+                    <li class="tab">CONTACT US</li>
+                </ul>
+        </nav>
+    </header>
+
+    <!--------------------------- Hero Section ------------------------->
+    <div class="hero">
+    
+        <div class="landing-text">
+            <div class="style-div">
+                <h3 class="style-text">SHEAR BLISS NYC</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/h1-slider1-background-img.jpg" alt="bg-image"></div>
+                <div class="swiper-slide"><img src="images/h1-slider3-background-img.jpg" alt="bg-image2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+    loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    });
+    </script>
+</body>
+</html>

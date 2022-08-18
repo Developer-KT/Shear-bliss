@@ -28,30 +28,95 @@
     </header>
 
     <!--------------------------- Hero Section ------------------------->
-    <div class="hero">
-    
-        <div class="landing-text">
-            <div class="style-div">
-                <h3 class="style-text">SHEAR BLISS NYC</h3>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/h1-slider1-background-img.jpg" alt="bg-image"></div>
-                <div class="swiper-slide"><img src="images/h1-slider3-background-img.jpg" alt="bg-image2"></div>
+    <div class="background-col">
+        <div class="hero">
+        
+            <div class="parallax-container">
+                <div class="iconic-look">
+                    <h3 class="iconic-text">Iconic look</h3>
                 </div>
-                <div class="swiper-pagination"></div>
-            
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
+                <div class="style-div">
+                    <h3 class="style-text">SHEAR BLISS NYC</h3>
+                </div>
+
+                <div class="new-york-since">
+                    <p class="new-york">new york • since 2004</p>
+                </div>
+
+                <div class="booking">
+                    <img src="images/book-now.png" alt="book-now" id="book-now-img">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/h1-slider1-background-img.jpg" alt="bg-image"></div>
+                    <div class="swiper-slide"><img src="images/h1-slider3-background-img.jpg" alt="bg-image2"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="prices-section">
+            <h3>PRICES</h3><br><br>
+
+            <div class="prices-container">
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
+                <div class="price-row"></div>
             </div>
         </div>
 
+        <div class="contact-section">
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12091.791253238656!2d-73.9867287122037!3d40.74117382905081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25909ae09ef2f%3A0x65edc579a408b5b7!2sShear%20Bliss%20NYC%20Salon!5e0!3m2!1sen!2sza!4v1660771612722!5m2!1sen!2sza" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="contact">
+                <div class="hours">
+                    <h4>Operating Hours</h4><br>
+                    <p>Mon - Fri : 09:00 - 20:00 </p>
+                    <p>Sat : 09:00 - 19:00 </p>
+                    <p>Sun : 10:00 - 18:00 </p>
+                </div>
+                <div class="details">
+                    <div class="location">
+                        <img src="images/location.png" alt="location icon">
+                        <p> 397 E 3rd Avenue - Between 28th st. and 29th st. <br> New York, 10016 <br></p>
+                    </div>
+                    <div class="contact-det">
+                        <img src="images/mail-icon.png" alt="mail icon">
+                        <p>shearblissnyc@yahoo.com</p>
+                    </div>
+                    <div class="phone-det">
+                        <img src="images/telephone.png" alt="telephone icon">
+                        <p>(212) 213-6050</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
+    <footer class="footer"></footer>
 
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -61,19 +126,21 @@
                 delay: 5000,
                 disableOnInteraction: false
             },
-    loop: true,
+            loop: true,
 
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-    },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+            },
 
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
 
-    });
+            });
+
+            
     </script>
 </body>
 </html>

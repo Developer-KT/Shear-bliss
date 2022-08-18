@@ -13,11 +13,13 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
+    top: 0;
     width: 100%;
     height: auto;
     align-items: center;
     color: rgb(231, 231, 231);
+    padding-bottom: 13px;
 }
 
 .logo img {
@@ -33,7 +35,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: fit-content;
-    padding-right: 74px;
+    padding-right: 50px;
     padding-top: 12.5px;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 13px;
@@ -52,10 +54,10 @@ nav {
 }
 
                 /* ----------------------- Hero Section -------------------------- */
+.background-col {
+    background-color: rgb(246, 246, 246);
+}
 
-/* .landing-text {
-    
-}                 */
 
 .hero {
     overflow: hidden;
@@ -68,6 +70,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: appear 1.5s forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .swiper {
@@ -83,6 +95,39 @@ nav {
     color: white;
 }
 
+.iconic-look  {
+    position: absolute;
+    top: 250px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quentin';
+    font-size: 60px;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    animation: slidein 2s forwards;
+}
+
+.iconic-text {
+    color: #FFCC00;
+    text-align: center;
+    font-weight: 100;
+}
+
+@keyframes slidein {
+    0% {
+        position: absolute;
+        top: 0;
+        opacity: 0
+    }
+    100% {
+        position: absolute;
+        top: 250px;
+        opacity: 1;
+    }
+}
 
 .style-div {
     position: absolute;
@@ -93,6 +138,7 @@ nav {
     align-items: center;
     font-family: 'Montserrat';
     font-size: 25px;
+    white-space: nowrap;
     width: 100%;
     margin: auto;
 }
@@ -101,7 +147,7 @@ nav {
     color: white;
     letter-spacing: 50px;
     text-align: center;
-    animation: reveal 2.5s forwards;
+    animation: reveal 2s forwards;
     height: 40px;
 }
 
@@ -112,4 +158,154 @@ nav {
     100% {
         margin-right: 0px;
     }
+}
+
+.new-york-since {
+    position: absolute;
+    bottom: 105px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    animation: ny-slidein 2s forwards;
+}
+
+.new-york {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 3px;
+}
+
+@keyframes ny-slidein {
+    0% {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        position: absolute;
+        bottom: 105px;
+        opacity: 1;
+    }
+}
+
+.booking {
+    position: absolute;
+    top: 585px;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#book-now-img {
+    width: 260px;
+    height: 190px;
+    animation: book-now-appear 1.5s forwards;
+    cursor: pointer;
+}
+
+@keyframes book-now-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.prices-section { 
+    margin-top: 200px;
+    padding-left: 125px;
+    font-family: 'Montserrat';
+}
+
+.prices-container {
+    display: grid;
+    width: 50%;
+    border: .25px rgb(122, 122, 122) solid;
+    margin-top: 11px;
+}
+.price-row {
+    border-bottom: .25px rgb(122, 122, 122) solid;
+    width: 100%;
+    height: 40px;
+}
+
+/* ---------------------------------- */
+
+.contact-section {
+    display: flex;
+    padding-left: 125px;
+    margin: 200px auto 0 auto;
+    padding-bottom: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+.map {
+    width: 350px;
+    height: 400px;
+}
+
+.contact {
+    margin-left: 120px;
+}
+.hours {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+.location img {
+    width: 20px;
+    height: 20px;
+}
+
+.location {
+    display: flex;
+}
+.location p {
+    padding-left: 20px;
+}
+
+.contact-det {
+    display: flex;
+    margin-top: 20px;
+}
+.details p {
+    padding-left: 20px;
+}
+
+.contact-det img {
+    width: 20px;
+    height: 27.5px;
+}
+
+.phone-det {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.phone-det img {
+    width: 17.5px;
+    height: 17.5px;
+}
+
+/* ------------------------------------------------ Footer ------------------------------------------------------------------- */
+
+footer {
+    height: 310px;
+    background-color: black;
 }

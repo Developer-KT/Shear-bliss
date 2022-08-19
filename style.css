@@ -46,11 +46,20 @@ nav {
 .tab {
     padding: 16px;
     width: fit-content;
+    cursor: pointer;
 }
 
-.tab:hover {
-    cursor: pointer;
-
+.tab::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    transition: 0.3s;
+    margin-top: 3px;
+}
+.tab:hover::after {
+    width: 100%;
 }
 
                 /* ----------------------- Hero Section -------------------------- */
